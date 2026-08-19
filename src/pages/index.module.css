@@ -1,0 +1,437 @@
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+  padding: 110px 0 100px;
+  background: #111;
+  color: white;
+}
+
+.heroLabel {
+  margin-bottom: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  opacity: 0.6;
+}
+
+.hero h1 {
+  margin: 0;
+  max-width: 900px;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.heroTagline {
+  max-width: 650px;
+  margin: 30px 0 45px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+.searchPlaceholder {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  max-width: 650px;
+  padding: 18px 22px;
+
+  border: 1px solid #555;
+  background: #1c1c1c;
+
+  color: #999;
+
+  font-size: 1rem;
+}
+
+
+/* ================================
+   GENERAL SECTIONS
+================================ */
+
+.section {
+  padding: 100px 0;
+}
+
+.sectionHeader {
+  max-width: 750px;
+  margin-bottom: 45px;
+}
+
+.sectionHeader h2 {
+  margin-bottom: 18px;
+
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  letter-spacing: -0.04em;
+}
+
+.sectionHeader p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.65;
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  opacity: 0.5;
+}
+
+
+/* ================================
+   QUICK ACCESS
+================================ */
+
+.quickGrid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.quickCard {
+  display: block;
+
+  padding: 35px;
+
+  border: 1px solid #ddd;
+
+  color: inherit;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.quickCard:hover {
+  transform: translateY(-4px);
+
+  border-color: #111;
+
+  color: inherit;
+}
+
+.quickIcon {
+  margin-bottom: 25px;
+
+  font-size: 2rem;
+}
+
+.quickCard h3 {
+  margin-bottom: 12px;
+
+  font-size: 1.4rem;
+}
+
+.quickCard p {
+  min-height: 55px;
+
+  line-height: 1.6;
+
+  opacity: 0.65;
+}
+
+.arrow {
+  display: inline-block;
+
+  margin-top: 15px;
+
+  font-weight: 700;
+}
+
+
+/* ================================
+   CODE OF CONDUCT
+================================ */
+
+.conductSection {
+  padding: 75px 0;
+
+  background: #eeeeee;
+}
+
+.conductContent {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 50px;
+}
+
+.conductContent h2 {
+  margin-bottom: 15px;
+
+  font-size: 2.5rem;
+}
+
+.conductContent p:not(.eyebrow) {
+  max-width: 700px;
+
+  line-height: 1.7;
+
+  opacity: 0.7;
+}
+
+.darkButton {
+  flex-shrink: 0;
+
+  background: #111;
+
+  border: 1px solid #111;
+
+  color: white;
+}
+
+.darkButton:hover {
+  background: #333;
+
+  color: white;
+}
+
+
+/* ================================
+   EQUIPMENT
+================================ */
+
+.equipmentGrid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.equipmentCard {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px;
+
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+  color: inherit;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: background 0.2s ease;
+}
+
+.equipmentCard:hover {
+  background: #f2f2f2;
+
+  color: inherit;
+}
+
+.equipmentCard span {
+  opacity: 0.45;
+}
+
+.centerLink {
+  margin-top: 35px;
+
+  text-align: center;
+}
+
+.centerLink a {
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+/* ================================
+   PROJECTS
+================================ */
+
+.projectsSection {
+  padding: 100px 0;
+
+  background: #111;
+
+  color: white;
+}
+
+.projectGrid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+.projectCard {
+  display: block;
+
+  overflow: hidden;
+
+  background: #1c1c1c;
+
+  color: white;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-4px);
+
+  background: #252525;
+
+  color: white;
+}
+
+.projectImage {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 250px;
+
+  background: #292929;
+
+  color: #777;
+
+  font-size: 0.7rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+}
+
+.projectContent {
+  padding: 28px;
+}
+
+.projectContent h3 {
+  margin-bottom: 12px;
+
+  font-size: 1.4rem;
+}
+
+.projectContent p {
+  line-height: 1.6;
+
+  opacity: 0.6;
+}
+
+.projectContent span {
+  display: inline-block;
+
+  margin-top: 12px;
+
+  font-weight: 700;
+}
+
+
+/* ================================
+   ABOUT
+================================ */
+
+.aboutSection {
+  padding: 100px 0;
+
+  text-align: center;
+}
+
+.aboutSection h2 {
+  margin-bottom: 20px;
+
+  font-size: clamp(2.5rem, 5vw, 4rem);
+
+  letter-spacing: -0.04em;
+}
+
+.aboutSection > div > p:not(.eyebrow) {
+  max-width: 650px;
+
+  margin: 0 auto 25px;
+
+  font-size: 1.1rem;
+
+  line-height: 1.7;
+
+  opacity: 0.65;
+}
+
+.aboutLink {
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media screen and (max-width: 996px) {
+
+  .quickGrid,
+  .projectGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .equipmentGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .conductContent {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .hero {
+    padding: 80px 0;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .section,
+  .projectsSection {
+    padding: 70px 0;
+  }
+
+  .quickGrid,
+  .projectGrid,
+  .equipmentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .quickCard {
+    padding: 28px;
+  }
+}
