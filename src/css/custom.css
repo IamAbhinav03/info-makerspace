@@ -5,7 +5,23 @@
  */
 
 /* You can override the default Infima variables here. */
-:root {
+:root,
+html[data-theme='dark'] {
+  --ifm-color-scheme: light;
+  --ifm-color-emphasis-0: #fff;
+  --ifm-color-emphasis-100: #f5f6f7;
+  --ifm-color-emphasis-200: #ebedf0;
+  --ifm-color-emphasis-300: #dadde1;
+  --ifm-color-emphasis-400: #ccd0d5;
+  --ifm-color-emphasis-500: #bec3c9;
+  --ifm-color-emphasis-600: #8d949e;
+  --ifm-color-emphasis-700: #606770;
+  --ifm-color-emphasis-800: #444950;
+  --ifm-color-emphasis-900: #1c1e21;
+  --ifm-color-emphasis-1000: #000;
+  --ifm-color-content: #1c1e21;
+  --ifm-color-content-inverse: #fff;
+  --ifm-color-content-secondary: #525860;
   --ifm-color-primary: #123f6d;
   --ifm-color-primary-dark: #103961;
   --ifm-color-primary-darker: #0f355c;
@@ -19,6 +35,13 @@
   --ifm-navbar-background-color: #fff;
   --ifm-background-color: #fff;
   --ifm-background-surface-color: #fff;
+  --ifm-font-color-base: #1c1e21;
+  --ifm-font-color-base-inverse: #fff;
+  --ifm-font-color-secondary: #525860;
+  --ifm-hover-overlay: rgba(0, 0, 0, 0.05);
+  --ifm-code-background: #f5f6f7;
+  --ifm-toc-border-color: #dadde1;
+  --ifm-table-stripe-background: rgba(0, 0, 0, 0.03);
   --ifm-global-radius: 2px;
   --maker-red: #cf0a2c;
   --maker-red-dark: #a90020;
@@ -37,34 +60,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-[data-theme='dark'] {
-  --ifm-color-primary: #8ab9e6;
-  --ifm-color-primary-dark: #6ca7de;
-  --ifm-color-primary-darker: #5d9fda;
-  --ifm-color-primary-darkest: #2f82cc;
-  --ifm-color-primary-light: #a8cbed;
-  --ifm-color-primary-lighter: #b7d3ef;
-  --ifm-color-primary-lightest: #e4f0fa;
-  --ifm-background-color: #0f1215;
-  --ifm-background-surface-color: #15191d;
-  --ifm-navbar-background-color: #0c0f12;
-  --ifm-font-color-base: #f3f5f7;
-  --maker-red: #f25569;
-  --maker-red-dark: #dc3c53;
-  --maker-blue: #8ab9e6;
-  --maker-blue-dark: #b7d4ef;
-  --maker-blue-strong: #397ebd;
-  --maker-ink: #f3f5f7;
-  --maker-muted: #aab3bd;
-  --maker-bg: #0f1215;
-  --maker-paper: #111519;
-  --maker-surface: #151a1f;
-  --maker-raised: #1c2228;
-  --maker-line: #252c33;
-  --maker-line-strong: #39424b;
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -77,10 +72,6 @@ body {
 .navbar {
   border-bottom: 1px solid var(--maker-line);
   box-shadow: none;
-}
-
-[data-theme='dark'] .navbar {
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.02);
 }
 
 .navbar__title {
@@ -387,10 +378,6 @@ body {
   color: var(--maker-blue);
   font-size: 0.8rem;
   font-weight: 800;
-}
-
-[data-theme='dark'] .equipment-resource {
-  background: transparent;
 }
 
 .training-note {
