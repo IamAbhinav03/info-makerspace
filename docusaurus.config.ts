@@ -3,12 +3,16 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Makerspace Handbook',
-  tagline: 'Everything you need to know to make, build, and explore.',
-  favicon: 'img/favicon.ico',
+  title: 'Makerspace',
+  tagline: 'Learn, build, repair, and make with confidence.',
+  favicon: 'img/MS_Isometric_Light_Inverted@2x.png',
 
   future: {
     v4: true,
+    faster: {
+      rspackBundler: false,
+      rspackPersistentCache: false,
+    },
   },
 
   url: 'https://your-makespace-website.com',
@@ -46,22 +50,34 @@ const config: Config = {
 
   themeConfig: {
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
 
     navbar: {
-      title: 'MAKERSPACE',
+      title: 'Makerspace',
+      logo: {
+        alt: 'Makerspace logo',
+        src: 'img/MS_Isometric_Light_Inverted@2x.png',
+        width: 38,
+        height: 38,
+      },
 
       items: [
-        
+        {
+          to: '/docs/intro',
+          label: 'Start Here',
+          position: 'left',
+        },
         {
           to: '/docs/code-of-conduct',
-          label: 'Code of Conduct',
+          label: 'Safety',
           position: 'left',
         },
         {
           to: '/docs/equipment',
-          label: 'Equipment / Facility',
+          label: 'Equipment',
           position: 'left',
         },
         {
@@ -70,60 +86,16 @@ const config: Config = {
           position: 'left',
         },
         {
-          to: '/about',
-          label: 'About Us',
+          to: '/community',
+          label: 'Community',
           position: 'left',
         },
         {
           to: '/contact',
-          label: 'Contact Us',
+          label: 'Contact',
           position: 'left',
         },
       ],
-    },
-
-    footer: {
-      style: 'dark',
-
-      links: [
-        {
-          title: 'Makerspace',
-          items: [
-            {
-              label: 'Home',
-              to: '/',
-            },
-            {
-              label: 'Equipment / Facility',
-              to: '/equipment',
-            },
-            {
-              label: 'Projects',
-              to: '/projects',
-            },
-          ],
-        },
-
-        {
-          title: 'Information',
-          items: [
-            {
-              label: 'Code of Conduct',
-              to: '/code-of-conduct',
-            },
-            {
-              label: 'About Us',
-              to: '/about',
-            },
-            {
-              label: 'Contact Us',
-              to: '/contact',
-            },
-          ],
-        },
-      ],
-
-      copyright: `© ${new Date().getFullYear()} Makerspace. All rights reserved.`,
     },
 
     prism: {
