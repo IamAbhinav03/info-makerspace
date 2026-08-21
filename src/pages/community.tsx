@@ -13,12 +13,6 @@ const communityRoles = [
       'Trained student mentors help newcomers find a first step, share practical knowledge, and grow into peer leaders themselves.',
   },
   {
-    tag: 'Campus community',
-    title: 'Makerspace Club',
-    description:
-      'The club gives curious students a way to meet collaborators, organise activities, and keep making active outside a single class or project.',
-  },
-  {
     tag: 'Deep practice',
     title: 'Makers-in-Residence',
     description:
@@ -49,7 +43,7 @@ const partners = [
     tag: 'Makerspace development',
     title: 'Maker Bhavan Foundation',
     description:
-      'An advisory and event collaborator supporting Makerspace development, RedBrick Hacks III, and the wider maker ecosystem.',
+      'An advisory and event collaborator supporting Makerspace development and strengthening the wider maker ecosystem.',
   },
   {
     tag: 'Research connection',
